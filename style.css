@@ -47,9 +47,16 @@ nav ul{
 .gameinfo{
      padding: 0 34px;
 }
+.gameinfo h1{
+    font-size: 2.5rem;
+}
+.info{
+    font-size: 25px;;
+}
 .gameinfo img{
     display: none;
 }
+
 .br-0{
     border-right: 0;
 }
@@ -62,4 +69,26 @@ nav ul{
 .bb-0{
     border-bottom: 0;
 }
+#reset{
+    margin: 0 23px;
+    padding: 1px 18px;
+    background: #f3e7f3;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bolder;
+}
+@media screen and (max-width: 950px)
+{   
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        font-size: 34px;
+    }
+    .container{
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);
+    }
 
+}
